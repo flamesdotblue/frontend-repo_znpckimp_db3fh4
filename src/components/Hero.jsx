@@ -8,13 +8,19 @@ export default function Hero() {
       {/* 3D Spline Background */}
       <div className="absolute inset-0">
         <Spline
-          scene="https://prod.spline.design/LU2mWMPbF3Qi1Qxh/scene.splinecode"
+          scene="https://prod.spline.design/EF7JOSsHLk16Tlw9/scene.splinecode"
           style={{ width: '100%', height: '100%' }}
         />
       </div>
 
       {/* Gradient veil (non-interfering) */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/80 via-white/30 to-white" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70" />
+
+      {/* Neon edge glow accents */}
+      <div aria-hidden className="pointer-events-none absolute inset-0">
+        <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-fuchsia-500/20 blur-3xl" />
+        <div className="absolute bottom-[-10%] -left-24 h-96 w-96 rounded-full bg-cyan-500/20 blur-3xl" />
+      </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-24">
@@ -24,31 +30,30 @@ export default function Hero() {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="max-w-2xl"
         >
-          <div className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white/70 px-3 py-1 text-xs backdrop-blur">
-            <span className="h-2 w-2 rounded-full bg-emerald-500" />
+          <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-3 py-1 text-xs text-white/90 backdrop-blur-xl">
+            <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_12px_theme(colors.emerald.400)]" />
             Fresh Drop: Spring/Summer 2025
           </div>
 
-          <h1 className="mt-5 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.05]">
-            Elevate your everyday with statement essentials
+          <h1 className="mt-5 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.05] text-white">
+            Hyper‑modern essentials for a futuristic wardrobe
           </h1>
 
-          <p className="mt-4 text-base sm:text-lg text-zinc-700 leading-relaxed">
-            Premium fabrics, precision cuts, and colorways you can’t ignore. Designed
-            for movement. Made to turn heads.
+          <p className="mt-4 text-base sm:text-lg text-zinc-200/90 leading-relaxed">
+            Ultra‑vivid finishes, technical fabrics, and precision silhouettes. Built for movement, tuned for the spotlight.
           </p>
 
           <div className="mt-8 flex items-center gap-3">
             <a
               href="#collection"
-              className="group inline-flex items-center gap-2 rounded-full bg-black text-white px-6 py-3 text-sm font-medium shadow-lg shadow-black/10 hover:shadow-black/20 transition-shadow"
+              className="group inline-flex items-center gap-2 rounded-full bg-white/90 text-zinc-900 px-6 py-3 text-sm font-medium shadow-[0_8px_30px_rgba(255,255,255,0.15)] hover:bg-white transition-colors"
             >
               Shop collection
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </a>
             <a
               href="#new"
-              className="inline-flex items-center gap-2 rounded-full border border-zinc-300 bg-white/70 backdrop-blur px-6 py-3 text-sm font-medium"
+              className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 text-white/90 backdrop-blur-xl px-6 py-3 text-sm font-medium hover:bg-white/15"
             >
               Explore new in
             </a>
@@ -61,8 +66,8 @@ export default function Hero() {
               { label: 'Free returns', value: '30 days' },
             ].map((stat) => (
               <div key={stat.label} className="text-sm">
-                <div className="font-semibold">{stat.value}</div>
-                <div className="text-zinc-600">{stat.label}</div>
+                <div className="font-semibold text-white">{stat.value}</div>
+                <div className="text-white/70">{stat.label}</div>
               </div>
             ))}
           </div>
