@@ -1,7 +1,7 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import ProductGrid from './components/ProductGrid';
-import Footer from './components/Footer';
+import ParallaxLookbook from './components/ParallaxLookbook';
+import Catalog from './components/Catalog';
 
 export default function App() {
   return (
@@ -9,9 +9,9 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <ProductGrid />
+        <ParallaxLookbook />
+        <Catalog />
       </main>
-      <Footer />
     </div>
   );
 }
