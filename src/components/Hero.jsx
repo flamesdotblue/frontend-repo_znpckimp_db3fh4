@@ -5,21 +5,22 @@ import { ArrowRight } from 'lucide-react';
 export default function Hero() {
   return (
     <section className="relative min-h-[92vh] w-full overflow-hidden">
-      {/* 3D Spline Background */}
+      {/* 3D Spline Background - cover */}
       <div className="absolute inset-0">
         <Spline
-          scene="https://prod.spline.design/VyGeZv58yuk8j7Yy/scene.splinecode"
+          scene="https://prod.spline.design/Gt5HUob8aGDxOUep/scene.splinecode"
           style={{ width: '100%', height: '100%' }}
         />
       </div>
 
       {/* Gradient veil (non-interfering) */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/70" />
-
-      {/* Neon edge glow accents */}
-      <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-fuchsia-500/20 blur-3xl" />
-        <div className="absolute bottom-[-10%] -left-24 h-96 w-96 rounded-full bg-cyan-500/20 blur-3xl" />
+      <div className="pointer-events-none absolute inset-0">
+        {/* subtle dark-to-transparent veil for legibility */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/70" />
+        {/* mesh-y accent glows */}
+        <div className="absolute -top-24 right-[-10%] h-[28rem] w-[28rem] rounded-full bg-emerald-400/15 blur-3xl" />
+        <div className="absolute bottom-[-15%] -left-24 h-[26rem] w-[26rem] rounded-full bg-cyan-400/15 blur-3xl" />
+        <div className="absolute top-1/3 -left-20 h-72 w-72 rounded-full bg-fuchsia-400/10 blur-3xl" />
       </div>
 
       {/* Content */}
