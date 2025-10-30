@@ -8,7 +8,7 @@ export default function Hero() {
       {/* 3D Spline Background - cover */}
       <div className="absolute inset-0">
         <Spline
-          scene="https://prod.spline.design/Gt5HUob8aGDxOUep/scene.splinecode"
+          scene="https://prod.spline.design/kqB-rdL4TCJ7pyGb/scene.splinecode"
           style={{ width: '100%', height: '100%' }}
         />
       </div>
@@ -17,10 +17,10 @@ export default function Hero() {
       <div className="pointer-events-none absolute inset-0">
         {/* subtle dark-to-transparent veil for legibility */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/70" />
-        {/* mesh-y accent glows */}
-        <div className="absolute -top-24 right-[-10%] h-[28rem] w-[28rem] rounded-full bg-emerald-400/15 blur-3xl" />
-        <div className="absolute bottom-[-15%] -left-24 h-[26rem] w-[26rem] rounded-full bg-cyan-400/15 blur-3xl" />
-        <div className="absolute top-1/3 -left-20 h-72 w-72 rounded-full bg-fuchsia-400/10 blur-3xl" />
+        {/* vibrant pink/purple accent glows to match theme */}
+        <div className="absolute -top-24 right-[-10%] h-[28rem] w-[28rem] rounded-full bg-fuchsia-400/25 blur-3xl" />
+        <div className="absolute bottom-[-15%] -left-24 h-[26rem] w-[26rem] rounded-full bg-violet-400/25 blur-3xl" />
+        <div className="absolute top-1/3 -left-20 h-72 w-72 rounded-full bg-pink-400/20 blur-3xl" />
       </div>
 
       {/* Content */}
@@ -32,16 +32,16 @@ export default function Hero() {
           className="max-w-2xl"
         >
           <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-3 py-1 text-xs text-white/90 backdrop-blur-xl">
-            <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_12px_theme(colors.emerald.400)]" />
-            Fresh Drop: Spring/Summer 2025
+            <span className="h-2 w-2 rounded-full bg-fuchsia-400 shadow-[0_0_12px_theme(colors.fuchsia.400)]" />
+            New Arrival: SS25 Apparel
           </div>
 
           <h1 className="mt-5 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.05] text-white">
-            Hyper‑modern essentials for a futuristic wardrobe
+            Future‑ready fashion for everyday performance
           </h1>
 
           <p className="mt-4 text-base sm:text-lg text-zinc-200/90 leading-relaxed">
-            Ultra‑vivid finishes, technical fabrics, and precision silhouettes. Built for movement, tuned for the spotlight.
+            Elevated streetwear and refined essentials in fluid gradients and technical fabrics. Designed for motion.
           </p>
 
           <div className="mt-8 flex items-center gap-3">
@@ -49,7 +49,7 @@ export default function Hero() {
               href="#collection"
               className="group inline-flex items-center gap-2 rounded-full bg-white/90 text-zinc-900 px-6 py-3 text-sm font-medium shadow-[0_8px_30px_rgba(255,255,255,0.15)] hover:bg-white transition-colors"
             >
-              Shop collection
+              Shop apparel
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </a>
             <a
@@ -62,7 +62,7 @@ export default function Hero() {
 
           <div className="mt-10 grid grid-cols-3 max-w-md gap-6">
             {[
-              { label: 'Organic cotton', value: '100%' },
+              { label: 'Sustainable materials', value: '70%+' },
               { label: 'Avg. rating', value: '4.9/5' },
               { label: 'Free returns', value: '30 days' },
             ].map((stat) => (

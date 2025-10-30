@@ -26,7 +26,7 @@ function LookPanel({ image, title, subtitle, align = 'left' }) {
       >
         <div className="m-8 sm:m-12 max-w-lg">
           <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[10px] sm:text-xs text-white/90 backdrop-blur-xl">
-            <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_12px_theme(colors.emerald.400)]" />
+            <span className="h-2 w-2 rounded-full bg-fuchsia-400 shadow-[0_0_12px_theme(colors.fuchsia.400)]" />
             Editorial Lookbook
           </div>
           <h3 className="mt-4 text-3xl sm:text-5xl font-extrabold tracking-tight text-white">{title}</h3>
@@ -49,15 +49,15 @@ export default function ParallaxLookbook() {
     {
       image:
         'https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=2000&auto=format&fit=crop',
-      title: 'Mono Minimal',
-      subtitle: 'Monochrome silhouettes, smooth matte textures, precise lines.',
+      title: 'Chromatic Minimal',
+      subtitle: 'Monochrome silhouettes with soft gradient pops and precise lines.',
       align: 'right',
     },
     {
       image:
         'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=2000&auto=format&fit=crop',
       title: 'Neon Pulse',
-      subtitle: 'Dark fabrics lit by cyber green accents and reflective trims.',
+      subtitle: 'Dark fabrics lit by fuchsia highlights and reflective trims.',
       align: 'left',
     },
   ];
@@ -65,8 +65,8 @@ export default function ParallaxLookbook() {
   return (
     <section id="lookbook" className="relative bg-zinc-950 py-16 sm:py-24">
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute -top-24 right-[-10%] h-[28rem] w-[28rem] rounded-full bg-emerald-400/10 blur-3xl" />
-        <div className="absolute bottom-[-15%] -left-24 h-[26rem] w-[26rem] rounded-full bg-cyan-400/10 blur-3xl" />
+        <div className="absolute -top-24 right-[-10%] h-[28rem] w-[28rem] rounded-full bg-fuchsia-400/15 blur-3xl" />
+        <div className="absolute bottom-[-15%] -left-24 h-[26rem] w-[26rem] rounded-full bg-violet-400/15 blur-3xl" />
       </div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-10 flex items-end justify-between">
@@ -74,7 +74,7 @@ export default function ParallaxLookbook() {
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">Parallax Lookbook</h2>
             <p className="mt-2 text-zinc-300">Immersive editorial panels with depth and motion.</p>
           </div>
-          <a href="#collection" className="hidden sm:inline-block text-sm font-medium text-emerald-300 hover:text-white transition-colors">Shop the looks</a>
+          <a href="#collection" className="hidden sm:inline-block text-sm font-medium text-fuchsia-300 hover:text-white transition-colors">Shop the looks</a>
         </div>
         <div className="space-y-8 sm:space-y-12">
           {panels.map((p, idx) => (

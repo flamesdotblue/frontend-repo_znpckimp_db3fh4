@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ParallaxLookbook from './components/ParallaxLookbook';
 import Catalog from './components/Catalog';
+import Footer from './components/Footer';
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         <ParallaxLookbook />
         <Catalog />
       </main>
+      <Footer />
     </div>
   );
 }

@@ -55,7 +55,7 @@ function ProductCard({ product }) {
           ))}
           <span className="ml-2 text-xs text-zinc-600">(128)</span>
         </div>
-        <button className="mt-4 w-full rounded-full bg-black px-4 py-2 text-sm font-medium text-white hover:opacity-90">Add to cart</button>
+        <button className="mt-4 w-full rounded-full bg-gradient-to-r from-fuchsia-600 to-violet-600 px-4 py-2 text-sm font-medium text-white hover:opacity-95">Add to cart</button>
       </div>
     </motion.a>
   );
@@ -73,12 +73,12 @@ export default function Catalog() {
     <section id="catalog" className="relative py-16 sm:py-20 bg-gradient-to-b from-white to-zinc-50">
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute -top-10 -right-10 h-56 w-56 rounded-full bg-fuchsia-400/20 blur-3xl" />
-        <div className="absolute bottom-0 -left-10 h-56 w-56 rounded-full bg-cyan-400/20 blur-3xl" />
+        <div className="absolute bottom-0 -left-10 h-56 w-56 rounded-full bg-violet-400/20 blur-3xl" />
       </div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8 sm:mb-10 flex items-end justify-between">
           <div>
-            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">Explore Catalog</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">Explore Apparel</h2>
             <p className="mt-2 text-zinc-600">Switch categories with animated tabs. Smooth filtering with motion.</p>
           </div>
           <a href="#" className="hidden sm:inline-block text-sm font-medium underline underline-offset-4">View all</a>
