@@ -9,6 +9,7 @@ const products = [
     image:
       'https://images.unsplash.com/photo-1516826957135-700dedea698c?q=80&w=1600&auto=format&fit=crop',
     tag: 'Bestseller',
+    color: 'Graphite',
   },
   {
     id: 2,
@@ -17,6 +18,7 @@ const products = [
     image:
       'https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=1600&auto=format&fit=crop',
     tag: 'New',
+    color: 'Bone',
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ const products = [
     image:
       'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1600&auto=format&fit=crop',
     tag: 'Limited',
+    color: 'Olive',
   },
   {
     id: 4,
@@ -32,6 +35,7 @@ const products = [
     price: 140,
     image:
       'https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1600&auto=format&fit=crop',
+    color: 'Vapor',
   },
 ];
 
@@ -69,6 +73,7 @@ function ProductCard({ product }) {
           <h3 className="font-semibold tracking-tight">{product.title}</h3>
           <div className="text-sm font-semibold">${product.price}</div>
         </div>
+        <p className="mt-1 text-xs text-zinc-600">Color: {product.color || '—'}</p>
         <div className="mt-2 flex items-center gap-1 text-amber-500">
           {Array.from({ length: 5 }).map((_, i) => (
             <Star key={i} className="h-4 w-4 fill-amber-400" />
@@ -86,7 +91,13 @@ function ProductCard({ product }) {
 export default function ProductGrid() {
   return (
     <section id="collection" className="relative py-20 bg-gradient-to-b from-white to-zinc-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* soft background accents */}
+      <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="absolute -top-10 -right-10 h-56 w-56 rounded-full bg-fuchsia-400/20 blur-3xl" />
+        <div className="absolute bottom-0 -left-10 h-56 w-56 rounded-full bg-cyan-400/20 blur-3xl" />
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-10 flex items-end justify-between">
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">Featured Collection</h2>

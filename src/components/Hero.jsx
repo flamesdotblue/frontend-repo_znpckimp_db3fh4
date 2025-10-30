@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[86vh] w-full overflow-hidden">
+    <section className="relative min-h-[92vh] w-full overflow-hidden">
       {/* 3D Spline Background */}
       <div className="absolute inset-0">
         <Spline
@@ -14,12 +14,12 @@ export default function Hero() {
       </div>
 
       {/* Gradient veil (non-interfering) */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/70 via-white/30 to-white" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/80 via-white/30 to-white" />
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-24">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 22 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="max-w-2xl"
